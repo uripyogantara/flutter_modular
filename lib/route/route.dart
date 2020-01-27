@@ -1,3 +1,4 @@
+import 'package:cashloan_module/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/page/landing.dart';
 import 'package:flutter_modular/route/route_observer.dart';
@@ -12,7 +13,8 @@ class Routes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Spot().registerTags({
-      // Landing.PATH: Landing.TAG,
+      Landing.PATH: Landing.TAG,
+      CashloanPage.PATH: CashloanPage.TAG
 
       // // Put new route in this branch if it haven't self route branch
       // ...unsortedRouteBranchTAG,
@@ -43,6 +45,7 @@ class Routes extends StatelessWidget {
         Landing.PATH: (_) => Landing(
               initialWidget: initialWidget,
             ),
+        CashloanPage.PATH: (_) => CashloanPage()
 
         // // Put new route in this branch if it haven't self route branch
         // ...unsortedRouteBranch,
