@@ -1,3 +1,4 @@
+import 'package:app_module/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 // import 'package:flutterarchitecture/page/menu.dart';
@@ -44,7 +45,7 @@ class Init extends StatelessWidget {
           if (snapshot.data.toString().contains("fall")) {
             return Container();
           }
-          return appBuilder(context, Container());
+          return appBuilder(context, Menu());
         }
         return Container();
       },
