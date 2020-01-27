@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   app_module:
     path: ./app_module
+  config:
+    path: ./config
 
 dev_dependencies:
   flutter_test:

@@ -1,0 +1,1 @@
+enum EnvType { LIVE, STAGING, TEST, CUSTOM }

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:config/config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/app.dart';
 import 'package:flutter_modular/init.dart';
@@ -12,7 +13,7 @@ void main() {
 
   runZoned(() {
     runApp(Init(
-      configEnv: () {},
+      configEnv: () => Env().setStaging(),
       appBuilder: (BuildContext context, Widget initialWidget) => MyApp(
         initialWidget: initialWidget,
       ),
