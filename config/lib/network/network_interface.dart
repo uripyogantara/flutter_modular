@@ -5,10 +5,6 @@ import 'package:config/environment/env.dart';
 import 'package:config/network/network_library.dart';
 import 'package:config/network/network_model.dart';
 import 'package:dio/dio.dart';
-// import 'package:fazz_card/config/network/network_library.dart';
-// import 'package:fazz_card/config/network/network_model.dart';
-// import 'package:fazz_card/config/environment/env.dart';
-// import 'package:fazz_card/global/data/authorization_token.dart';
 import 'package:meta/meta.dart';
 
 class NetworkInterface {

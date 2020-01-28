@@ -2,6 +2,7 @@ import 'package:app_module/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:config/injector/injector.dart';
+import 'package:utility/log/log.dart';
 // import 'package:flutter_modular/injector/injector.dart';
 // import 'package:flutterarchitecture/page/menu.dart';
 
@@ -34,6 +35,7 @@ class Init extends StatelessWidget {
     // TODO init database
 
     // TODO init logger
+    Log.init();
 
     return 'nxt';
   }
