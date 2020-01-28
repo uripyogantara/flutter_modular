@@ -1,3 +1,5 @@
+import 'package:cashloan_module/main.dart';
+import 'package:config/injector/injector.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatefulWidget {
@@ -13,7 +15,14 @@ class HomeState extends State<Menu> {
   final List<Widget> widgetList = <Widget>[
     Text("Home"),
     Text("Order"),
-    Text("Kasbon"),
+    RaisedButton(
+      onPressed: () {
+        InjectorContainer()
+            .getNavigationKeyService()
+            .navigateToNamed(CashloanPage.PATH);
+      },
+      child: Text("Daftar"),
+    ),
   ];
 
   @override

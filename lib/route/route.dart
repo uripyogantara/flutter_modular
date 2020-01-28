@@ -2,7 +2,7 @@ import 'package:cashloan_module/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/page/landing.dart';
 import 'package:flutter_modular/route/route_observer.dart';
-import 'package:flutter_modular/utility/spot.dart';
+import 'package:utility/navigation/spot.dart';
 
 class Routes extends StatelessWidget {
   final Widget initialWidget;

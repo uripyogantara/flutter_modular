@@ -11,6 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^0.5.6
+  kiwi: ^0.2.0
+  utility:
+    path: ../utility
 
 dev_dependencies:
   flutter_test:

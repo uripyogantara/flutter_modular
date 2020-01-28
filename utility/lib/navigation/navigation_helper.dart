@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_modular/utility/spot.dart';
+import 'package:utility/navigation/spot.dart';
 
 class NavigationKeyHelper {
   GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();

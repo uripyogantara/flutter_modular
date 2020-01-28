@@ -1,4 +1,4 @@
-name: app_module
+name: utility
 description: A new Flutter package project.
 version: 0.0.1
 author:
@@ -10,13 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  config:
-    path: ../config
-  utility:
-    path: ../utility
-  
-  cashloan_module:
-    path: ../cashloan_module
 
 dev_dependencies:
   flutter_test:

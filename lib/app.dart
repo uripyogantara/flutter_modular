@@ -1,3 +1,4 @@
+import 'package:config/injector/injector.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/route/route.dart';
 
@@ -12,7 +13,8 @@ class MyApp extends StatefulWidget {
 }
 
 class MyAppState extends State<MyApp> {
-  GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
+  GlobalKey<NavigatorState> navigatorKey =
+      InjectorContainer().getNavigationKeyService().navigatorKey;
 
   @override
   Widget build(BuildContext context) {

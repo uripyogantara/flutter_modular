@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/utility/spot.dart';
+import 'package:utility/navigation/spot.dart';
 
 class MyRouteObserver extends RouteObserver<PageRoute<dynamic>> {
   @override

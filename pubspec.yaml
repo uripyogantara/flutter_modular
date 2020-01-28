@@ -27,6 +27,8 @@ dependencies:
     path: ./app_module
   config:
     path: ./config
+  utility:
+    path: ./utility
   cashloan_module:
     path: ./cashloan_module
 

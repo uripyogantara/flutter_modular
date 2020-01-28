@@ -1,6 +1,8 @@
 import 'package:app_module/menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:config/injector/injector.dart';
+// import 'package:flutter_modular/injector/injector.dart';
 // import 'package:flutterarchitecture/page/menu.dart';
 
 // import 'package:core_module/core_module.dart';
@@ -27,7 +29,7 @@ class Init extends StatelessWidget {
     // }
 
     // TODO init injector
-    // InjectorContainer().getNetworkInterfaceInstance().postData();
+    InjectorContainer().init();
 
     // TODO init database
 
