@@ -149,6 +149,20 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  gql:
+    dependency: transitive
+    description:
+      name: gql
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.12.0"
+  graphql:
+    dependency: "direct main"
+    description:
+      name: graphql
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.0"
   http:
     dependency: transitive
     description:
@@ -198,6 +212,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.1.8"
+  mime:
+    dependency: transitive
+    description:
+      name: mime
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.6+3"
   nested:
     dependency: transitive
     description:
@@ -392,6 +413,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  uuid_enhanced:
+    dependency: transitive
+    description:
+      name: uuid_enhanced
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.2"
   vector_math:
     dependency: transitive
     description:
@@ -399,6 +427,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.8"
+  websocket:
+    dependency: transitive
+    description:
+      name: websocket
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.5"
   xml:
     dependency: transitive
     description:

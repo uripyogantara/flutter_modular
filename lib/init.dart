@@ -1,7 +1,10 @@
 import 'package:app_module/menu.dart';
+import 'package:config/environment/env.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:config/injector/injector.dart';
+import 'package:logging/logging.dart';
+import 'package:trust_fall/trust_fall.dart';
 import 'package:utility/log/log.dart';
 // import 'package:flutter_modular/injector/injector.dart';
 // import 'package:flutterarchitecture/page/menu.dart';
@@ -19,24 +22,38 @@ class Init extends StatelessWidget {
 
     debugPaintSizeEnabled = false;
 
-    // TODO Trust Check
-    // if (Env().isBuildRelease()) {
-    //   if (!await TrustFall.isRealDevice) {
-    //     return 'fall';
-    //   }
-    //   if (await TrustFall.isJailBroken) {
-    //     return 'fall';
-    //   }
-    // }
+    // Trust Check
+    if (Env().isBuildRelease()) {
+      if (!await TrustFall.isRealDevice) {
+        return 'fall';
+      }
+      if (await TrustFall.isJailBroken) {
+        return 'fall';
+      }
+    }
 
-    // TODO init injector
-    InjectorContainer().init();
+    // init injector
+    final InjectorContainer injector = InjectorContainer();
+    injector.init();
 
     // TODO init database
 
-    // TODO init logger
+    // init logger
     Log.init();
+    Log.declareLevel();
 
+    if (Env().isBuildDebug()) {
+      //set Navigation key using Alice Navigator Key
+      await injector.getAliceHelper().initialize();
+
+      // Init NavigatorKey
+      if (injector.getAliceHelper().getAlice() != null) {
+        injector.getNavigationKeyService().setNavigatorKey(
+            injector.getAliceHelper().getAlice().getNavigatorKey());
+      }
+
+      // TODO Init BlocDelegate
+    }
     return 'nxt';
   }
 

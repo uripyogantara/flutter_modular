@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:dio/dio.dart' show RequestOptions, Response, DioError;
 import 'package:utility/log/log.dart';
 
 class DioLogger {

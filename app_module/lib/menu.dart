@@ -1,4 +1,3 @@
-import 'package:cashloan_module/main.dart';
 import 'package:cashloan_module/page/news/news_page.dart';
 import 'package:config/injector/injector.dart';
 import 'package:flutter/material.dart';

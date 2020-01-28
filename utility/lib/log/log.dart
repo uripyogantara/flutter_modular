@@ -1,3 +1,4 @@
+import 'package:config/environment/env.dart';
 import 'package:utility/navigation/spot.dart';
 import 'package:logging/logging.dart';
 
@@ -8,10 +9,17 @@ class Log {
 
   static void init() {
     Logger.root.onRecord.listen((record) {
-      // print('${record.level.name}: ${record.time}: ${record.message}');
       print('${record.level.name}: ${record.message}');
     });
     _instance = Logger(_NAME);
+  }
+
+  static void declareLevel() {
+    if (Env().isBuildDebug()) {
+      Log.setLevel(Level.ALL);
+    } else {
+      Log.setLevel(Level.OFF);
+    }
   }
 
   static void setLevel(Level level) {
