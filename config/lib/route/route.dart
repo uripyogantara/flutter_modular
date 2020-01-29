@@ -1,8 +1,8 @@
 import 'package:cashloan_module/main.dart';
 import 'package:cashloan_module/page/news/news_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/page/landing.dart';
-import 'package:flutter_modular/route/route_observer.dart';
+import 'package:app_module/page/landing.dart';
+import 'package:config/route/route_observer.dart';
 import 'package:utility/navigation/spot.dart';
 
 class Routes extends StatelessWidget {

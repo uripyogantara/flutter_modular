@@ -1,6 +1,6 @@
 import 'package:config/injector/injector.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/route/route.dart';
+import 'package:config/route/route.dart';
 
 class MyApp extends StatefulWidget {
   final Widget initialWidget;
