@@ -1,10 +1,10 @@
-import 'package:app_module/menu.dart';
-import 'package:config/environment/env.dart';
+import 'package:flutter_modular/page/menu/menu.dart';
+import 'package:flutter_modular/config/environment/env.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:config/injector/injector.dart';
+import 'package:flutter_modular/injector/injector.dart';
 import 'package:trust_fall/trust_fall.dart';
-import 'package:utility/log/log.dart';
+import 'package:flutter_modular/utility/log/log.dart';
 
 class Init extends StatelessWidget {
   final Function() configEnv;
