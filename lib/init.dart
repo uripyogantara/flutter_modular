@@ -3,13 +3,8 @@ import 'package:config/environment/env.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:config/injector/injector.dart';
-import 'package:logging/logging.dart';
 import 'package:trust_fall/trust_fall.dart';
 import 'package:utility/log/log.dart';
-// import 'package:flutter_modular/injector/injector.dart';
-// import 'package:flutterarchitecture/page/menu.dart';
-
-// import 'package:core_module/core_module.dart';
 
 class Init extends StatelessWidget {
   final Function() configEnv;

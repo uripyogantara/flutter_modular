@@ -16,6 +16,5 @@ class NewsView extends StatelessWidget {
         );
       },
     );
-    ;
   }
 }

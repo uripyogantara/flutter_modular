@@ -3,7 +3,6 @@ import 'package:config/network/network_interface.dart';
 import 'package:utility/alice/alice_helper.dart';
 import 'package:utility/navigation/navigation_helper.dart';
 
-// TODO extends Base Injector
 class InjectorContainer {
   static Container _container;
 
